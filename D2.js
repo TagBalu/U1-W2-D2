@@ -15,6 +15,10 @@ if (number1 > number2) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let x = 10;
+if (x !== 5) {
+  console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -29,6 +33,12 @@ console.log("divisibile", 10 % 5 == 0);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+u1 = 10;
+u2 = 2;
+
+if (u1 === 8 || u2 === 8 || u1 + u2 === 8 || u1 - u2 === 8 || u2 - u1 === 8) {
+  console.log("verificato");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -37,6 +47,14 @@ console.log("divisibile", 10 % 5 == 0);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 55;
+let shippingCost = 10;
+let amountToPay = totalShoppingCart;
+if (totalShoppingCart < 50) {
+  amountToPay += shippingCost;
+}
+
+console.log("totaledapagare", amountToPay);
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -46,19 +64,47 @@ console.log("divisibile", 10 % 5 == 0);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
-  Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
-  Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
-  Alla fine mostra il risultato in console.
+Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
+Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
+Alla fine mostra il risultato in console.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+a1 = 6;
+a2 = 19;
+a3 = 13;
+
+if (a1 >= a2) {
+  if (a3 >= a1) {
+    console.log(a3, a1, a2);
+  } else {
+    if (a3 >= a2) {
+      console.log(a1, a3, a2);
+    } else console.log(a1, a2, a3);
+  }
+} else {
+  if (a3 >= a2) {
+    console.log(a3, a2, a1);
+  } else {
+    if (a3 >= a1) {
+      console.log(a2, a3, a1);
+    } else {
+      console.log(a2, a1, a3);
+    }
+  }
+}
 
 /* ESERCIZIO 8
-  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
+Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let number4 = 95;
+if (typeof number4 === "string") {
+  console.log("è una stringa");
+} else {
+  console.log("non è una stringa");
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
@@ -98,8 +144,8 @@ const me = {
   skills: ["javascript", "html", "css"]
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+me.city = "toronto";
+console.log(me);
 /* ESERCIZIO 12
 Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
